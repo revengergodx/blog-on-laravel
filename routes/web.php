@@ -27,7 +27,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/main', MainIndexController::class)->name('main.index');
+Route::get('/', MainIndexController::class)->name('main.index');
 
 Route::controller(PostIndexController::class)->group(function () {
     Route::get('/blog', 'index')->name('post.index');

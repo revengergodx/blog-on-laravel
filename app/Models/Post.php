@@ -16,6 +16,7 @@ class Post extends Model
     protected $guarded = false;
 
     protected $withCount = ['likedUsers'];
+
     public function tags()
     {
         return $this->belongsToMany(Tag::class, 'post_tags', 'post_id', 'tag_id');
@@ -38,6 +39,6 @@ class Post extends Model
 
     public function getPostDateAsCarbonAttribute()
     {
-        return Carbon::parse($this->create_at);
+        return Carbon::parse($this->created_at);
     }
 }
