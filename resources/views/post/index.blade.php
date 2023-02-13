@@ -10,7 +10,7 @@
                         <div class="col-md-4">
                             <div class="post-entry-1">
                                 <a href="{{ route('post.show', $post->id) }}"><img
-                                        src="{{ 'storage/' . $post->preview_image }}" alt="" class="img-fluid"></a>
+                                        src="{{ asset('storage/' . $post->preview_image )}}" alt="" class="img-fluid"></a>
                                 <div class="post-meta"><span class="date">{{ $post->category->title}}</span> <span
                                         class="mx-1">&bullet;</span>
                                     <span>{{ $post->postDateAsCarbon->translatedFormat('F') }} {{ $post->postDateAsCarbon->day }}, {{ $post->postDateAsCarbon->year }} - {{ $post->postDateAsCarbon->format('H:i') }}</span>
