@@ -15,7 +15,7 @@
                             </div>
                             <h1 class="mb-2">{{ $post->title }}</h1>
                             <div class="text-center col-10 mb-4 align-content-center">
-                                <img src="{{ asset('storage/images/' . $post->preview_image) }}" alt="" class="img-fluid w-50">
+                                <img src="{{ asset('storage/' . $post->preview_image) }}" alt="" class="img-fluid w-50">
                             </div>
                             <p>{{ $post->content }}</p>
                             <div class="text-center col-12">
